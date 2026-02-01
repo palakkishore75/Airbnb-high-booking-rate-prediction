@@ -1,0 +1,16 @@
+{"time":"2025-04-10T23:41:35.662855-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/Users/percival/Projects/Airbnb_Analysis/wandb/run-20250410_234135-ooih9xt0/logs/debug-core.log"}
+{"time":"2025-04-10T23:41:35.903155-04:00","level":"INFO","msg":"created new stream","id":"ooih9xt0"}
+{"time":"2025-04-10T23:41:35.903199-04:00","level":"INFO","msg":"stream: started","id":"ooih9xt0"}
+{"time":"2025-04-10T23:41:35.903203-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"ooih9xt0"}
+{"time":"2025-04-10T23:41:35.903397-04:00","level":"INFO","msg":"sender: started","stream_id":"ooih9xt0"}
+{"time":"2025-04-10T23:41:35.903411-04:00","level":"INFO","msg":"handler: started","stream_id":"ooih9xt0"}
+{"time":"2025-04-10T23:41:36.102494-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-10T23:41:41.782874-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-10T23:41:41.782899-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-10T23:41:42.802477-04:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading outputs/models/XGBoost_final_manualsplit.pkl","runtime_seconds":0.906957708,"progress":"2.3MB/14.8MB"}],"total_operations":1}}
+{"time":"2025-04-10T23:41:49.593924-04:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-10T23:41:49.75688-04:00","level":"INFO","msg":"stream: closing","id":"ooih9xt0"}
+{"time":"2025-04-10T23:41:49.757144-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ooih9xt0"}
+{"time":"2025-04-10T23:41:49.757214-04:00","level":"INFO","msg":"sender: closed","stream_id":"ooih9xt0"}
+{"time":"2025-04-10T23:41:49.757461-04:00","level":"INFO","msg":"handler: closed","stream_id":"ooih9xt0"}
+{"time":"2025-04-10T23:41:49.757572-04:00","level":"INFO","msg":"stream: closed","id":"ooih9xt0"}

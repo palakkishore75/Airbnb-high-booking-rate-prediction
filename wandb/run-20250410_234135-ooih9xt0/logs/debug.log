@@ -1,0 +1,29 @@
+2025-04-10 23:41:35,625 INFO    MainThread:70771 [wandb_setup.py:_flush():67] Current SDK version is 0.19.9
+2025-04-10 23:41:35,625 INFO    MainThread:70771 [wandb_setup.py:_flush():67] Configure stats pid to 70771
+2025-04-10 23:41:35,625 INFO    MainThread:70771 [wandb_setup.py:_flush():67] Loading settings from /Users/percival/.config/wandb/settings
+2025-04-10 23:41:35,625 INFO    MainThread:70771 [wandb_setup.py:_flush():67] Loading settings from /Users/percival/Projects/Airbnb_Analysis/wandb/settings
+2025-04-10 23:41:35,625 INFO    MainThread:70771 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-04-10 23:41:35,625 INFO    MainThread:70771 [wandb_init.py:setup_run_log_directory():662] Logging user logs to /Users/percival/Projects/Airbnb_Analysis/wandb/run-20250410_234135-ooih9xt0/logs/debug.log
+2025-04-10 23:41:35,626 INFO    MainThread:70771 [wandb_init.py:setup_run_log_directory():663] Logging internal logs to /Users/percival/Projects/Airbnb_Analysis/wandb/run-20250410_234135-ooih9xt0/logs/debug-internal.log
+2025-04-10 23:41:35,626 INFO    MainThread:70771 [wandb_init.py:init():781] calling init triggers
+2025-04-10 23:41:35,626 INFO    MainThread:70771 [wandb_init.py:init():786] wandb.init called with sweep_config: {}
+config: {'model': 'XGBoost', 'colsample_bytree': 1, 'learning_rate': 0.05, 'max_depth': 9, 'n_estimators': 1000, 'subsample': 0.8, 'split_note': 'manual test set with 1000 positives, 3000 negatives', '_wandb': {}}
+2025-04-10 23:41:35,626 INFO    MainThread:70771 [wandb_init.py:init():809] starting backend
+2025-04-10 23:41:35,626 INFO    MainThread:70771 [wandb_init.py:init():813] sending inform_init request
+2025-04-10 23:41:35,657 INFO    MainThread:70771 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2025-04-10 23:41:35,658 INFO    MainThread:70771 [wandb_init.py:init():823] backend started and connected
+2025-04-10 23:41:35,660 INFO    MainThread:70771 [wandb_init.py:init():915] updated telemetry
+2025-04-10 23:41:35,674 INFO    MainThread:70771 [wandb_init.py:init():939] communicating run to backend with 90.0 second timeout
+2025-04-10 23:41:36,100 INFO    MainThread:70771 [wandb_init.py:init():1014] starting run threads in backend
+2025-04-10 23:41:36,179 INFO    MainThread:70771 [wandb_run.py:_console_start():2454] atexit reg
+2025-04-10 23:41:36,179 INFO    MainThread:70771 [wandb_run.py:_redirect():2306] redirect: wrap_raw
+2025-04-10 23:41:36,179 INFO    MainThread:70771 [wandb_run.py:_redirect():2371] Wrapping output streams.
+2025-04-10 23:41:36,180 INFO    MainThread:70771 [wandb_run.py:_redirect():2394] Redirects installed.
+2025-04-10 23:41:36,181 INFO    MainThread:70771 [wandb_init.py:init():1056] run started, returning control to user process
+2025-04-10 23:41:41,782 INFO    MainThread:70771 [wandb_run.py:_finish():2189] finishing run swattikmaiti-umd/airbnb_model_training/ooih9xt0
+2025-04-10 23:41:41,782 INFO    MainThread:70771 [wandb_run.py:_atexit_cleanup():2419] got exitcode: 0
+2025-04-10 23:41:41,782 INFO    MainThread:70771 [wandb_run.py:_restore():2401] restore
+2025-04-10 23:41:41,782 INFO    MainThread:70771 [wandb_run.py:_restore():2407] restore done
+2025-04-10 23:41:49,753 INFO    MainThread:70771 [wandb_run.py:_footer_history_summary_info():4064] rendering history
+2025-04-10 23:41:49,754 INFO    MainThread:70771 [wandb_run.py:_footer_history_summary_info():4096] rendering summary
+2025-04-10 23:41:49,755 INFO    MainThread:70771 [wandb_run.py:_footer_sync_info():4025] logging synced files

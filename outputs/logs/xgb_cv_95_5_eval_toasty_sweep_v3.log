@@ -1,0 +1,19 @@
+2025-04-30 02:00:33,010 | INFO | 🚀 Starting 5-Fold CV with XGBoost
+2025-04-30 02:00:52,143 | INFO |    AUC for fold 1: 0.9093
+2025-04-30 02:01:11,627 | INFO |    AUC for fold 2: 0.9106
+2025-04-30 02:01:31,863 | INFO |    AUC for fold 3: 0.9059
+2025-04-30 02:01:52,970 | INFO |    AUC for fold 4: 0.9054
+2025-04-30 02:02:15,106 | INFO |    AUC for fold 5: 0.9077
+2025-04-30 02:02:15,107 | INFO | ✅ Mean CV AUC: 0.9078
+2025-04-30 02:02:39,746 | INFO | 🎯 Final Holdout AUC: 0.9040
+2025-04-30 02:02:39,755 | INFO | 📊 Final Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.93      0.88      0.91      3671
+           1       0.62      0.73      0.67       933
+
+    accuracy                           0.85      4604
+   macro avg       0.77      0.81      0.79      4604
+weighted avg       0.86      0.85      0.86      4604
+
+2025-04-30 02:02:39,806 | INFO | 💾 Final model saved to outputs/models/xgb_model_95_5_toasty_sweep_v3.pkl

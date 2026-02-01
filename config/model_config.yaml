@@ -1,0 +1,24 @@
+RandomForest:
+  model_class: sklearn.ensemble.RandomForestClassifier
+  params:
+    n_estimators: 100
+    max_depth: 10
+    random_state: 42
+
+GradientBoosting:
+  model_class: sklearn.ensemble.GradientBoostingClassifier
+  params:
+    n_estimators: 100
+    random_state: 42
+
+XGBoost:
+  model_class: xgboost.XGBClassifier
+  params:
+    use_label_encoder: False
+    eval_metric: logloss
+    random_state: 42
+
+LightGBM:
+  model_class: lightgbm.LGBMClassifier
+  params:
+    random_state: 42

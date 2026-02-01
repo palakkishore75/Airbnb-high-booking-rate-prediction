@@ -1,0 +1,15 @@
+{"time":"2025-04-07T18:46:48.003622-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/Users/percival/Projects/Airbnb_Analysis/wandb/run-20250407_184647-dx2n5txd/logs/debug-core.log"}
+{"time":"2025-04-07T18:46:48.278775-04:00","level":"INFO","msg":"created new stream","id":"dx2n5txd"}
+{"time":"2025-04-07T18:46:48.278805-04:00","level":"INFO","msg":"stream: started","id":"dx2n5txd"}
+{"time":"2025-04-07T18:46:48.278818-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"dx2n5txd"}
+{"time":"2025-04-07T18:46:48.279125-04:00","level":"INFO","msg":"sender: started","stream_id":"dx2n5txd"}
+{"time":"2025-04-07T18:46:48.279138-04:00","level":"INFO","msg":"handler: started","stream_id":"dx2n5txd"}
+{"time":"2025-04-07T18:46:48.399406-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-07T18:48:13.151614-04:00","level":"INFO","msg":"stream: closing","id":"dx2n5txd"}
+{"time":"2025-04-07T18:48:13.15203-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-07T18:48:13.152138-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-07T18:48:13.531509-04:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-07T18:48:13.762293-04:00","level":"INFO","msg":"sender: closed","stream_id":"dx2n5txd"}
+{"time":"2025-04-07T18:48:13.762291-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":"dx2n5txd"}
+{"time":"2025-04-07T18:48:13.763206-04:00","level":"INFO","msg":"handler: closed","stream_id":"dx2n5txd"}
+{"time":"2025-04-07T18:48:13.763303-04:00","level":"INFO","msg":"stream: closed","id":"dx2n5txd"}

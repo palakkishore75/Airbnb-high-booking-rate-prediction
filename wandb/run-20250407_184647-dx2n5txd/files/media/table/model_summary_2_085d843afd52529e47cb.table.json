@@ -1,0 +1,1 @@
+{"columns": ["Model", "Mean AUC", "Std AUC"], "data": [["XGBoost", 0.9006957056345006, 0.0023329777358465286]]}

@@ -1,0 +1,44 @@
+{
+  "os":  "macOS-14.4.1-arm64-arm-64bit",
+  "python":  "CPython 3.11.11",
+  "startedAt":  "2025-04-09T23:12:56.093049Z",
+  "program":  "/Users/percival/Projects/Airbnb_Analysis/src/model_training/retrain_final_xgboost.py",
+  "codePath":  "src/model_training/retrain_final_xgboost.py",
+  "git":  {
+    "remote":  "https://github.com/PerciValXIII/AirBnb_Analysis.git",
+    "commit":  "6279cbd2a79d5be14781e117508d546421856430"
+  },
+  "email":  "swattikwork123@gmail.com",
+  "root":  "/Users/percival/Projects/Airbnb_Analysis",
+  "host":  "Swattiks-MacBook-Pro.local",
+  "executable":  "/Users/percival/anaconda3/envs/airbnb101/bin/python",
+  "codePathLocal":  "src/model_training/retrain_final_xgboost.py",
+  "cpu_count":  8,
+  "cpu_count_logical":  8,
+  "disk":  {
+    "/":  {
+      "total":  "994662584320",
+      "used":  "175041609728"
+    },
+    "/System/Volumes/Data":  {
+      "total":  "994662584320",
+      "used":  "175041609728"
+    }
+  },
+  "memory":  {
+    "total":  "8589934592"
+  },
+  "cpu":  {
+    "count":  8,
+    "countLogical":  8
+  },
+  "apple":  {
+    "name":  "Apple M3",
+    "ecpuCores":  4,
+    "pcpuCores":  4,
+    "gpuCores":  10,
+    "memoryGb":  8,
+    "swapTotalBytes":  "4294967296",
+    "ramTotalBytes":  "8589934592"
+  }
+}

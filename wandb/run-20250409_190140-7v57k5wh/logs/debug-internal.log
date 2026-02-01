@@ -1,0 +1,102 @@
+2025-04-09 19:01:40,295 INFO    StreamThr :57580 [internal.py:wandb_internal():83] W&B internal server running at pid: 57580, started at: 2025-04-09 19:01:40.294475
+2025-04-09 19:01:40,296 INFO    WriterThread:57580 [datastore.py:open_for_write():87] open: /Users/percival/Projects/Airbnb_Analysis/wandb/run-20250409_190140-7v57k5wh/run-7v57k5wh.wandb
+2025-04-09 19:01:41,180 INFO    HandlerThread:57580 [system_monitor.py:start():187] Starting system monitor
+2025-04-09 19:01:41,180 INFO    SystemMonitor:57580 [system_monitor.py:_start():151] Starting system asset monitoring threads
+2025-04-09 19:01:41,181 INFO    SenderThread:57580 [dir_watcher.py:__init__():211] watching files in: /Users/percival/Projects/Airbnb_Analysis/wandb/run-20250409_190140-7v57k5wh/files
+2025-04-09 19:01:41,181 INFO    SystemMonitor:57580 [interfaces.py:start():186] Started cpu monitoring
+2025-04-09 19:01:41,181 INFO    HandlerThread:57580 [system_monitor.py:probe():207] Collecting system info
+2025-04-09 19:01:41,181 INFO    SenderThread:57580 [sender.py:_start_run_threads():1134] run started: 7v57k5wh with start time 1744239700.29393
+2025-04-09 19:01:41,181 INFO    SystemMonitor:57580 [interfaces.py:start():186] Started disk monitoring
+2025-04-09 19:01:41,185 INFO    SystemMonitor:57580 [interfaces.py:start():186] Started memory monitoring
+2025-04-09 19:01:41,189 INFO    SystemMonitor:57580 [interfaces.py:start():186] Started network monitoring
+2025-04-09 19:01:41,230 INFO    HandlerThread:57580 [system_monitor.py:probe():217] Finished collecting system info
+2025-04-09 19:01:41,230 INFO    HandlerThread:57580 [system_monitor.py:probe():220] Publishing system info
+2025-04-09 19:01:42,023 INFO    HandlerThread:57580 [system_monitor.py:probe():222] Finished publishing system info
+2025-04-09 19:01:42,024 INFO    SenderThread:57580 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2025-04-09 19:01:42,181 INFO    Thread-12 :57580 [dir_watcher.py:_on_file_created():272] file/dir created: /Users/percival/Projects/Airbnb_Analysis/wandb/run-20250409_190140-7v57k5wh/files/conda-environment.yaml
+2025-04-09 19:01:42,181 INFO    Thread-12 :57580 [dir_watcher.py:_on_file_created():272] file/dir created: /Users/percival/Projects/Airbnb_Analysis/wandb/run-20250409_190140-7v57k5wh/files/wandb-metadata.json
+2025-04-09 19:01:42,181 INFO    Thread-12 :57580 [dir_watcher.py:_on_file_created():272] file/dir created: /Users/percival/Projects/Airbnb_Analysis/wandb/run-20250409_190140-7v57k5wh/files/requirements.txt
+2025-04-09 19:01:42,522 INFO    wandb-upload_0:57580 [upload_job.py:push():130] Uploaded file /var/folders/h9/1bj_h1mn7x17sxt9zd1p76vh0000gn/T/tmpu4bpam_qwandb/esvkaazz-wandb-metadata.json
+2025-04-09 19:01:43,186 INFO    Thread-12 :57580 [dir_watcher.py:_on_file_created():272] file/dir created: /Users/percival/Projects/Airbnb_Analysis/wandb/run-20250409_190140-7v57k5wh/files/output.log
+2025-04-09 19:01:45,196 INFO    Thread-12 :57580 [dir_watcher.py:_on_file_modified():289] file/dir modified: /Users/percival/Projects/Airbnb_Analysis/wandb/run-20250409_190140-7v57k5wh/files/output.log
+2025-04-09 19:01:46,641 INFO    SenderThread:57580 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-04-09 19:01:46,642 INFO    SenderThread:57580 [sender.py:send_exit():554] handling exit code: 0
+2025-04-09 19:01:46,642 INFO    SenderThread:57580 [sender.py:send_exit():556] handling runtime: 5
+2025-04-09 19:01:46,642 INFO    SenderThread:57580 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-04-09 19:01:46,642 INFO    SenderThread:57580 [sender.py:send_exit():562] send defer
+2025-04-09 19:01:46,642 INFO    HandlerThread:57580 [handler.py:handle_request_defer():188] handle defer: 0
+2025-04-09 19:01:46,642 INFO    SenderThread:57580 [sender.py:send_request_defer():578] handle sender defer: 0
+2025-04-09 19:01:46,642 INFO    SenderThread:57580 [sender.py:transition_state():582] send defer: 1
+2025-04-09 19:01:46,642 INFO    HandlerThread:57580 [handler.py:handle_request_defer():188] handle defer: 1
+2025-04-09 19:01:46,642 INFO    SenderThread:57580 [sender.py:send_request_defer():578] handle sender defer: 1
+2025-04-09 19:01:46,642 INFO    SenderThread:57580 [sender.py:transition_state():582] send defer: 2
+2025-04-09 19:01:46,642 INFO    HandlerThread:57580 [handler.py:handle_request_defer():188] handle defer: 2
+2025-04-09 19:01:46,642 INFO    HandlerThread:57580 [system_monitor.py:finish():196] Stopping system monitor
+2025-04-09 19:01:46,643 INFO    HandlerThread:57580 [interfaces.py:finish():198] Joined cpu monitor
+2025-04-09 19:01:46,643 INFO    HandlerThread:57580 [interfaces.py:finish():198] Joined disk monitor
+2025-04-09 19:01:46,643 INFO    HandlerThread:57580 [interfaces.py:finish():198] Joined memory monitor
+2025-04-09 19:01:46,643 INFO    HandlerThread:57580 [interfaces.py:finish():198] Joined network monitor
+2025-04-09 19:01:46,643 INFO    SenderThread:57580 [sender.py:send_request_defer():578] handle sender defer: 2
+2025-04-09 19:01:46,643 INFO    SenderThread:57580 [sender.py:transition_state():582] send defer: 3
+2025-04-09 19:01:46,643 INFO    HandlerThread:57580 [handler.py:handle_request_defer():188] handle defer: 3
+2025-04-09 19:01:46,643 INFO    SenderThread:57580 [sender.py:send_request_defer():578] handle sender defer: 3
+2025-04-09 19:01:46,643 INFO    SenderThread:57580 [sender.py:transition_state():582] send defer: 4
+2025-04-09 19:01:46,643 INFO    HandlerThread:57580 [handler.py:handle_request_defer():188] handle defer: 4
+2025-04-09 19:01:46,643 INFO    SenderThread:57580 [sender.py:send_request_defer():578] handle sender defer: 4
+2025-04-09 19:01:46,643 INFO    SenderThread:57580 [sender.py:transition_state():582] send defer: 5
+2025-04-09 19:01:46,643 INFO    HandlerThread:57580 [handler.py:handle_request_defer():188] handle defer: 5
+2025-04-09 19:01:46,643 INFO    SenderThread:57580 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-04-09 19:01:46,643 INFO    SenderThread:57580 [sender.py:send_request_defer():578] handle sender defer: 5
+2025-04-09 19:01:46,643 INFO    SenderThread:57580 [sender.py:transition_state():582] send defer: 6
+2025-04-09 19:01:46,643 INFO    HandlerThread:57580 [handler.py:handle_request_defer():188] handle defer: 6
+2025-04-09 19:01:46,643 INFO    SenderThread:57580 [sender.py:send_request_defer():578] handle sender defer: 6
+2025-04-09 19:01:46,767 INFO    SenderThread:57580 [sender.py:transition_state():582] send defer: 7
+2025-04-09 19:01:46,767 INFO    HandlerThread:57580 [handler.py:handle_request_defer():188] handle defer: 7
+2025-04-09 19:01:46,767 INFO    SenderThread:57580 [sender.py:send_request_defer():578] handle sender defer: 7
+2025-04-09 19:01:47,208 INFO    Thread-12 :57580 [dir_watcher.py:_on_file_modified():289] file/dir modified: /Users/percival/Projects/Airbnb_Analysis/wandb/run-20250409_190140-7v57k5wh/files/config.yaml
+2025-04-09 19:01:47,208 INFO    Thread-12 :57580 [dir_watcher.py:_on_file_created():272] file/dir created: /Users/percival/Projects/Airbnb_Analysis/wandb/run-20250409_190140-7v57k5wh/files/wandb-summary.json
+2025-04-09 19:01:48,367 INFO    SenderThread:57580 [sender.py:transition_state():582] send defer: 8
+2025-04-09 19:01:48,368 INFO    HandlerThread:57580 [handler.py:handle_request_defer():188] handle defer: 8
+2025-04-09 19:01:48,369 INFO    SenderThread:57580 [sender.py:send_request_defer():578] handle sender defer: 8
+2025-04-09 19:01:48,369 INFO    SenderThread:57580 [sender.py:transition_state():582] send defer: 9
+2025-04-09 19:01:48,369 INFO    HandlerThread:57580 [handler.py:handle_request_defer():188] handle defer: 9
+2025-04-09 19:01:48,370 INFO    SenderThread:57580 [sender.py:send_request_defer():578] handle sender defer: 9
+2025-04-09 19:01:48,370 INFO    SenderThread:57580 [dir_watcher.py:finish():359] shutting down directory watcher
+2025-04-09 19:01:49,213 INFO    SenderThread:57580 [dir_watcher.py:_on_file_modified():289] file/dir modified: /Users/percival/Projects/Airbnb_Analysis/wandb/run-20250409_190140-7v57k5wh/files/output.log
+2025-04-09 19:01:49,214 INFO    SenderThread:57580 [dir_watcher.py:finish():389] scan: /Users/percival/Projects/Airbnb_Analysis/wandb/run-20250409_190140-7v57k5wh/files
+2025-04-09 19:01:49,214 INFO    SenderThread:57580 [dir_watcher.py:finish():403] scan save: /Users/percival/Projects/Airbnb_Analysis/wandb/run-20250409_190140-7v57k5wh/files/requirements.txt requirements.txt
+2025-04-09 19:01:49,214 INFO    SenderThread:57580 [dir_watcher.py:finish():403] scan save: /Users/percival/Projects/Airbnb_Analysis/wandb/run-20250409_190140-7v57k5wh/files/output.log output.log
+2025-04-09 19:01:49,217 INFO    SenderThread:57580 [dir_watcher.py:finish():403] scan save: /Users/percival/Projects/Airbnb_Analysis/wandb/run-20250409_190140-7v57k5wh/files/config.yaml config.yaml
+2025-04-09 19:01:49,217 INFO    SenderThread:57580 [dir_watcher.py:finish():403] scan save: /Users/percival/Projects/Airbnb_Analysis/wandb/run-20250409_190140-7v57k5wh/files/wandb-summary.json wandb-summary.json
+2025-04-09 19:01:49,223 INFO    SenderThread:57580 [dir_watcher.py:finish():403] scan save: /Users/percival/Projects/Airbnb_Analysis/wandb/run-20250409_190140-7v57k5wh/files/conda-environment.yaml conda-environment.yaml
+2025-04-09 19:01:49,224 INFO    SenderThread:57580 [dir_watcher.py:finish():403] scan save: /Users/percival/Projects/Airbnb_Analysis/wandb/run-20250409_190140-7v57k5wh/files/wandb-metadata.json wandb-metadata.json
+2025-04-09 19:01:49,226 INFO    SenderThread:57580 [sender.py:transition_state():582] send defer: 10
+2025-04-09 19:01:49,226 INFO    HandlerThread:57580 [handler.py:handle_request_defer():188] handle defer: 10
+2025-04-09 19:01:49,229 INFO    SenderThread:57580 [sender.py:send_request_defer():578] handle sender defer: 10
+2025-04-09 19:01:49,229 INFO    SenderThread:57580 [file_pusher.py:finish():169] shutting down file pusher
+2025-04-09 19:01:49,469 INFO    wandb-upload_0:57580 [upload_job.py:push():130] Uploaded file /Users/percival/Projects/Airbnb_Analysis/wandb/run-20250409_190140-7v57k5wh/files/requirements.txt
+2025-04-09 19:01:49,560 INFO    wandb-upload_1:57580 [upload_job.py:push():130] Uploaded file /Users/percival/Projects/Airbnb_Analysis/wandb/run-20250409_190140-7v57k5wh/files/output.log
+2025-04-09 19:01:49,622 INFO    wandb-upload_3:57580 [upload_job.py:push():130] Uploaded file /Users/percival/Projects/Airbnb_Analysis/wandb/run-20250409_190140-7v57k5wh/files/wandb-summary.json
+2025-04-09 19:01:49,625 INFO    wandb-upload_4:57580 [upload_job.py:push():130] Uploaded file /Users/percival/Projects/Airbnb_Analysis/wandb/run-20250409_190140-7v57k5wh/files/conda-environment.yaml
+2025-04-09 19:01:49,626 INFO    wandb-upload_2:57580 [upload_job.py:push():130] Uploaded file /Users/percival/Projects/Airbnb_Analysis/wandb/run-20250409_190140-7v57k5wh/files/config.yaml
+2025-04-09 19:01:49,828 INFO    Thread-11 (_thread_body):57580 [sender.py:transition_state():582] send defer: 11
+2025-04-09 19:01:49,829 INFO    HandlerThread:57580 [handler.py:handle_request_defer():188] handle defer: 11
+2025-04-09 19:01:49,829 INFO    SenderThread:57580 [sender.py:send_request_defer():578] handle sender defer: 11
+2025-04-09 19:01:49,829 INFO    SenderThread:57580 [file_pusher.py:join():175] waiting for file pusher
+2025-04-09 19:01:49,829 INFO    SenderThread:57580 [sender.py:transition_state():582] send defer: 12
+2025-04-09 19:01:49,829 INFO    HandlerThread:57580 [handler.py:handle_request_defer():188] handle defer: 12
+2025-04-09 19:01:49,830 INFO    SenderThread:57580 [sender.py:send_request_defer():578] handle sender defer: 12
+2025-04-09 19:01:49,830 INFO    SenderThread:57580 [file_stream.py:finish():601] file stream finish called
+2025-04-09 19:01:49,923 INFO    SenderThread:57580 [file_stream.py:finish():605] file stream finish is done
+2025-04-09 19:01:49,923 INFO    SenderThread:57580 [sender.py:transition_state():582] send defer: 13
+2025-04-09 19:01:49,923 INFO    HandlerThread:57580 [handler.py:handle_request_defer():188] handle defer: 13
+2025-04-09 19:01:49,924 INFO    SenderThread:57580 [sender.py:send_request_defer():578] handle sender defer: 13
+2025-04-09 19:01:49,924 INFO    SenderThread:57580 [sender.py:transition_state():582] send defer: 14
+2025-04-09 19:01:49,924 INFO    HandlerThread:57580 [handler.py:handle_request_defer():188] handle defer: 14
+2025-04-09 19:01:49,925 INFO    SenderThread:57580 [sender.py:send_request_defer():578] handle sender defer: 14
+2025-04-09 19:01:49,931 INFO    HandlerThread:57580 [handler.py:finish():897] shutting down handler
+2025-04-09 19:01:50,933 INFO    MsgRouterThr:57580 [mailbox.py:close():129] Closing mailbox, abandoning 0 handles.
+2025-04-09 19:01:50,933 INFO    WriterThread:57580 [datastore.py:close():296] close: /Users/percival/Projects/Airbnb_Analysis/wandb/run-20250409_190140-7v57k5wh/run-7v57k5wh.wandb
+2025-04-09 19:01:50,933 INFO    SenderThread:57580 [sender.py:finish():1584] shutting down sender
+2025-04-09 19:01:50,934 INFO    SenderThread:57580 [file_pusher.py:finish():169] shutting down file pusher
+2025-04-09 19:01:50,934 INFO    SenderThread:57580 [file_pusher.py:join():175] waiting for file pusher

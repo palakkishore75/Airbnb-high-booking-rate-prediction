@@ -1,0 +1,19 @@
+2025-04-22 23:36:00,333 | INFO | 🚀 Starting 5-Fold CV with XGBoost
+2025-04-22 23:36:07,511 | INFO |    AUC for fold 1: 0.8982
+2025-04-22 23:36:14,235 | INFO |    AUC for fold 2: 0.8992
+2025-04-22 23:36:21,268 | INFO |    AUC for fold 3: 0.8958
+2025-04-22 23:36:28,136 | INFO |    AUC for fold 4: 0.8952
+2025-04-22 23:36:34,870 | INFO |    AUC for fold 5: 0.8968
+2025-04-22 23:36:34,870 | INFO | ✅ Mean CV AUC: 0.8970
+2025-04-22 23:36:43,006 | INFO | 🎯 Final Holdout AUC: 0.8947
+2025-04-22 23:36:43,011 | INFO | 📊 Final Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.91      0.89      0.90      3671
+           1       0.61      0.65      0.63       933
+
+    accuracy                           0.85      4604
+   macro avg       0.76      0.77      0.77      4604
+weighted avg       0.85      0.85      0.85      4604
+
+2025-04-22 23:36:43,050 | INFO | 💾 Final model saved to outputs/models/xgb_final_model_95_5_v4.pkl

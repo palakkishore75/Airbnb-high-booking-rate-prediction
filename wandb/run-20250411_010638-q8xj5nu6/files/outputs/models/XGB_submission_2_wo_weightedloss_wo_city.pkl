@@ -1,0 +1,1 @@
+/Users/percival/Projects/Airbnb_Analysis/outputs/models/XGB_submission_2_wo_weightedloss_wo_city.pkl

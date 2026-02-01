@@ -1,0 +1,35 @@
+balmy-sweep-50 config 
+
+XGBClassifier(
+        use_label_encoder=False,
+        eval_metric='auc',
+        random_state=42,
+        colsample_bytree=0.8,
+        learning_rate=0.01,
+        max_depth=9,
+        n_estimators=3500,
+        subsample=0.8,
+        scale_pos_weight=1.5,
+        gamma=0,
+        min_child_weight=1
+    )
+
+2025-05-05 01:56:01,508 | INFO | 🚀 Starting 5-Fold CV with XGBoost
+2025-05-05 01:56:27,028 | INFO |    AUC for fold 1: 0.9153
+2025-05-05 01:56:52,172 | INFO |    AUC for fold 2: 0.9173
+2025-05-05 01:57:17,019 | INFO |    AUC for fold 3: 0.9134
+2025-05-05 01:57:41,722 | INFO |    AUC for fold 4: 0.9124
+2025-05-05 01:58:06,210 | INFO |    AUC for fold 5: 0.9150
+2025-05-05 01:58:06,210 | INFO | ✅ Mean CV AUC: 0.9147
+2025-05-05 01:58:35,387 | INFO | 🎯 Final Holdout AUC: 0.9141
+2025-05-05 01:58:35,390 | INFO | 📊 Final Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.91      0.93      0.92      3671
+           1       0.69      0.62      0.66       933
+
+    accuracy                           0.87      4604
+   macro avg       0.80      0.78      0.79      4604
+weighted avg       0.86      0.87      0.87      4604
+
+2025-05-05 01:58:35,464 | INFO | 💾 Final model saved to outputs/models/xgb_model_95_5_balmy-sweep-50_v7.pkl

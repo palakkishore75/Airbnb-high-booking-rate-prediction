@@ -1,0 +1,17 @@
+✅ scale_pos_weight = 3.99
+/Users/percival/anaconda3/envs/airbnb101/lib/python3.11/site-packages/xgboost/training.py:183: UserWarning: [23:47:14] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:738:
+Parameters: { "use_label_encoder" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+
+✅ AUC on Manually Constructed Test Set: 0.9109
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.90      0.91      0.90      3000
+           1       0.71      0.69      0.70      1000
+
+    accuracy                           0.85      4000
+   macro avg       0.81      0.80      0.80      4000
+weighted avg       0.85      0.85      0.85      4000

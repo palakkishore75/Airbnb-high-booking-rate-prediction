@@ -1,0 +1,19 @@
+2025-04-22 04:37:11,557 | INFO | 🚀 Starting 5-Fold CV with XGBoost
+2025-04-22 04:37:13,703 | INFO |    AUC for fold 1: 0.8886
+2025-04-22 04:37:15,590 | INFO |    AUC for fold 2: 0.8910
+2025-04-22 04:37:17,448 | INFO |    AUC for fold 3: 0.8848
+2025-04-22 04:37:19,675 | INFO |    AUC for fold 4: 0.8873
+2025-04-22 04:37:21,716 | INFO |    AUC for fold 5: 0.8885
+2025-04-22 04:37:21,717 | INFO | ✅ Mean CV AUC: 0.8880
+2025-04-22 04:37:23,933 | INFO | 🎯 Final Holdout AUC: 0.8862
+2025-04-22 04:37:23,936 | INFO | 📊 Final Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.88      0.95      0.91      3671
+           1       0.69      0.47      0.56       933
+
+    accuracy                           0.85      4604
+   macro avg       0.78      0.71      0.73      4604
+weighted avg       0.84      0.85      0.84      4604
+
+2025-04-22 04:37:23,943 | INFO | 💾 Final model saved to outputs/models/xgb_final_model_95_5_harini.pkl

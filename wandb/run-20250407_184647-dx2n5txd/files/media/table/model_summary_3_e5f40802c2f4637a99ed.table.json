@@ -1,0 +1,1 @@
+{"columns": ["Model", "Mean AUC", "Std AUC"], "data": [["LightGBM", 0.8962866593476535, 0.003934460948159167]]}

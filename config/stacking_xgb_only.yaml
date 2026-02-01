@@ -1,0 +1,64 @@
+xgb_1:  # Baseline high-capacity
+  model_type: xgb
+  params:
+    use_label_encoder: False
+    eval_metric: logloss
+    random_state: 42
+    colsample_bytree: 0.9
+    learning_rate: 0.01
+    max_depth: 9
+    n_estimators: 2000
+    subsample: 0.8
+    scale_pos_weight: 2
+
+xgb_2:  # Balanced learner
+  model_type: xgb
+  params:
+    use_label_encoder: False
+    eval_metric: logloss
+    random_state: 42
+    max_depth: 6
+    learning_rate: 0.05
+    n_estimators: 1000
+    subsample: 0.8
+    colsample_bytree: 0.8
+    scale_pos_weight: 4
+
+xgb_3:  # Slightly shallower, conservative
+  model_type: xgb
+  params:
+    use_label_encoder: False
+    eval_metric: logloss
+    random_state: 42
+    max_depth: 5
+    learning_rate: 0.03
+    n_estimators: 800
+    subsample: 0.9
+    colsample_bytree: 0.6
+    scale_pos_weight: 4
+
+xgb_4:  # Deep & aggressive — high learning rate
+  model_type: xgb
+  params:
+    use_label_encoder: False
+    eval_metric: logloss
+    random_state: 42
+    max_depth: 10
+    learning_rate: 0.1
+    n_estimators: 700
+    subsample: 0.7
+    colsample_bytree: 0.7
+    scale_pos_weight: 3
+
+xgb_5:  # Shallow & regularized
+  model_type: xgb
+  params:
+    use_label_encoder: False
+    eval_metric: logloss
+    random_state: 42
+    max_depth: 3
+    learning_rate: 0.02
+    n_estimators: 1200
+    subsample: 0.8
+    colsample_bytree: 0.8
+    scale_pos_weight: 5

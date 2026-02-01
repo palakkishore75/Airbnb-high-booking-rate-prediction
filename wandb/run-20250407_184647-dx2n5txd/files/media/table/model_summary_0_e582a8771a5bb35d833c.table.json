@@ -1,0 +1,1 @@
+{"columns": ["Model", "Mean AUC", "Std AUC"], "data": [["RandomForest", 0.8706350333573962, 0.004269554377255773]]}

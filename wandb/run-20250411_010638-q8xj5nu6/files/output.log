@@ -1,0 +1,16 @@
+/Users/percival/anaconda3/envs/airbnb101/lib/python3.11/site-packages/xgboost/training.py:183: UserWarning: [01:06:39] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:738:
+Parameters: { "use_label_encoder" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+
+✅ AUC on 5% Test Set: 0.9104
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.90      0.94      0.92      3671
+           1       0.73      0.59      0.65       933
+
+    accuracy                           0.87      4604
+   macro avg       0.81      0.77      0.79      4604
+weighted avg       0.86      0.87      0.87      4604

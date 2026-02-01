@@ -1,0 +1,93 @@
+extratrees:
+  model_type: sklearn
+  class: ExtraTreesClassifier
+  params:
+    n_estimators: 300
+    max_depth: 8
+    random_state: 42
+
+xgb_1: 
+  model_type: xgb
+  params:
+    use_label_encoder: False
+    eval_metric: logloss
+    random_state: 42
+    colsample_bytree: 0.9
+    learning_rate: 0.01
+    max_depth: 9
+    n_estimators: 2000
+    subsample: 0.8
+    scale_pos_weight: 2
+
+xgb_2:
+  model_type: xgb
+  params:
+    max_depth: 6
+    learning_rate: 0.05
+    n_estimators: 1000
+    subsample: 0.8
+    colsample_bytree: 0.8
+    scale_pos_weight: 4
+
+xgb_3:
+  model_type: xgb
+  params:
+    max_depth: 7
+    learning_rate: 0.03
+    n_estimators: 800
+    subsample: 0.9
+    colsample_bytree: 0.6
+    scale_pos_weight: 4
+
+logreg:
+  model_type: sklearn
+  class: LogisticRegression
+  params:
+    solver: saga
+    max_iter: 1000
+    class_weight: balanced
+
+rf:
+  model_type: sklearn
+  class: RandomForestClassifier
+  params:
+    n_estimators: 300
+    max_depth: 7
+    class_weight: balanced
+    random_state: 42
+
+lgb:
+  model_type: lgb
+  class: LGBMClassifier
+  params:
+    n_estimators: 500
+    learning_rate: 0.05
+    scale_pos_weight: 4
+    random_state: 42
+    verbose: -1
+
+cat:
+  model_type: catboost
+  class: CatBoostClassifier
+  params:
+    iterations: 500
+    learning_rate: 0.05
+    depth: 6
+    verbose: 0
+    scale_pos_weight: 4
+
+adaboost:
+  model_type: sklearn
+  class: AdaBoostClassifier
+  params:
+    n_estimators: 300
+    learning_rate: 0.1
+    random_state: 42
+
+knn:
+  model_type: sklearn
+  class: KNeighborsClassifier
+  params:
+    n_neighbors: 20
+    weights: distance
+

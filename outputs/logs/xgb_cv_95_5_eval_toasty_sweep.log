@@ -1,0 +1,38 @@
+
+
+model = XGBClassifier(
+        use_label_encoder=False,
+        eval_metric='auc',
+        random_state=42,
+        colsample_bytree=0.9,
+        learning_rate=0.01,
+        max_depth=9,
+        n_estimators=3000,
+        subsample=0.8,
+        scale_pos_weight=3,
+        gamma=1,
+        min_child_weight=1
+    )
+
+
+
+
+2025-04-30 00:39:30,043 | INFO | 🚀 Starting 5-Fold CV with XGBoost
+2025-04-30 00:39:51,385 | INFO |    AUC for fold 1: 0.9093
+2025-04-30 00:40:11,023 | INFO |    AUC for fold 2: 0.9106
+2025-04-30 00:40:32,770 | INFO |    AUC for fold 3: 0.9059
+2025-04-30 00:40:53,263 | INFO |    AUC for fold 4: 0.9054
+2025-04-30 00:41:13,085 | INFO |    AUC for fold 5: 0.9077
+2025-04-30 00:41:13,085 | INFO | ✅ Mean CV AUC: 0.9078
+2025-04-30 00:41:29,073 | INFO | 🎯 Final Holdout AUC: 0.9038
+2025-04-30 00:41:29,076 | INFO | 📊 Final Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.92      0.90      0.91      3671
+           1       0.64      0.69      0.66       933
+
+    accuracy                           0.86      4604
+   macro avg       0.78      0.80      0.79      4604
+weighted avg       0.86      0.86      0.86      4604
+
+2025-04-30 00:41:29,108 | INFO | 💾 Final model saved to outputs/models/xgb_model_95_5_toasty_sweep.pkl

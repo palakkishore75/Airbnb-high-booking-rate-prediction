@@ -1,0 +1,38 @@
+2025-04-22 04:58:57,734 | INFO | 🚀 Starting 5-Fold CV with XGBoost
+2025-04-22 04:59:05,180 | INFO |    AUC for fold 1: 0.9022
+2025-04-22 04:59:13,094 | INFO |    AUC for fold 2: 0.9039
+2025-04-22 04:59:21,589 | INFO |    AUC for fold 3: 0.9003
+2025-04-22 04:59:29,409 | INFO |    AUC for fold 4: 0.9001
+2025-04-22 04:59:36,690 | INFO |    AUC for fold 5: 0.9015
+2025-04-22 04:59:36,690 | INFO | ✅ Mean CV AUC: 0.9016
+2025-04-22 04:59:44,563 | INFO | 🎯 Final Holdout AUC: 0.8992
+2025-04-22 04:59:44,566 | INFO | 📊 Final Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.92      0.89      0.91      3671
+           1       0.62      0.69      0.65       933
+
+    accuracy                           0.85      4604
+   macro avg       0.77      0.79      0.78      4604
+weighted avg       0.86      0.85      0.86      4604
+
+2025-04-22 04:59:44,601 | INFO | 💾 Final model saved to outputs/models/xgb_final_model_95_5_v2.pkl
+2025-04-22 05:05:04,595 | INFO | 🚀 Starting 5-Fold CV with XGBoost
+2025-04-22 05:05:13,361 | INFO |    AUC for fold 1: 0.9037
+2025-04-22 05:05:22,275 | INFO |    AUC for fold 2: 0.9046
+2025-04-22 05:05:31,115 | INFO |    AUC for fold 3: 0.9001
+2025-04-22 05:05:39,554 | INFO |    AUC for fold 4: 0.9008
+2025-04-22 05:05:48,086 | INFO |    AUC for fold 5: 0.9017
+2025-04-22 05:05:48,086 | INFO | ✅ Mean CV AUC: 0.9022
+2025-04-22 05:05:58,102 | INFO | 🎯 Final Holdout AUC: 0.9010
+2025-04-22 05:05:58,105 | INFO | 📊 Final Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.92      0.90      0.91      3671
+           1       0.63      0.68      0.65       933
+
+    accuracy                           0.85      4604
+   macro avg       0.77      0.79      0.78      4604
+weighted avg       0.86      0.85      0.85      4604
+
+2025-04-22 05:05:58,145 | INFO | 💾 Final model saved to outputs/models/xgb_final_model_95_5_v2.pkl

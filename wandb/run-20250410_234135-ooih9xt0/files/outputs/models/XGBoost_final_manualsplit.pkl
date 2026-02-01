@@ -1,0 +1,1 @@
+/Users/percival/Projects/Airbnb_Analysis/outputs/models/XGBoost_final_manualsplit.pkl
