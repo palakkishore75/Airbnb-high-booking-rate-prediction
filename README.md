@@ -1,170 +1,161 @@
-
 # Airbnb High Booking Rate Prediction 🏡📈
 
-This repository contains the complete pipeline for a machine learning competition project focused on predicting **high booking rate listings on Airbnb**.  
-The final model achieved an **AUC of 0.916 on the hidden test set**, securing **2nd place** on the competition leaderboard.
+This repository contains an end-to-end machine learning pipeline for predicting **high booking rate Airbnb listings** (binary classification).  
+The final solution achieved a **0.916 AUC on the hidden test set**, securing **2nd place** in the competition.
 
-The project emphasizes clean feature engineering, modular experimentation, robust model evaluation, and reproducibility.
-
----
-
-## 📌 Problem Overview
-
-The goal of this project is to build a binary classification model that predicts whether an Airbnb listing will have a **high booking rate**, based on listing attributes, host behavior, pricing signals, and historical patterns.
-
-This is a real-world style ML problem involving:
-- Tabular data
-- Class imbalance
-- Feature-rich inputs
-- Careful validation and leakage prevention
+The project emphasizes clean experimentation, modular training pipelines, and reproducibility, with a strong focus on tree-based models and ensemble techniques.
 
 ---
 
-## 🧠 Modeling Approach (High-Level)
+## 🏆 Results
 
-- Extensive **feature engineering** driven by domain intuition
-- Strong baseline models followed by **XGBoost-focused experimentation**
-- **K-fold cross-validation** with AUC as the primary metric
-- Final model selection based on CV stability and leaderboard performance
-- Reproducible experiment tracking and logging
-
-> Note: This README intentionally avoids detailing every experiment to keep the repository approachable. See code and configs for deeper dives.
+- **Final Hidden Test AUC:** **0.916**
+- **Leaderboard Position:** **2nd**
+- **Primary Metric:** ROC-AUC
 
 ---
 
-## 📂 Repository Structure
+## 🧠 High-Level Approach
+
+- Feature engineering and feature selection experiments
+- K-fold cross-validation for robust model evaluation
+- Extensive **XGBoost tuning** (manual + W&B sweeps)
+- Experiments with imbalance handling, neural networks, and stacking
+- Final retraining and submission generation from selected configurations
+
+This README intentionally avoids documenting every experiment in detail; instead, it focuses on helping a new reader understand **where things live** and **how the pipeline fits together**.
+
+---
+
+## 📁 Repository Structure
 
 ```
-
-├── config/
-│   ├── model_config.yaml
-│   └── feature_config.yaml
+.
+├── config/                          # Centralized configuration files
+│   ├── model_config.yaml            # Core model & training configuration
+│   ├── sweep_config.yaml            # W&B hyperparameter sweep configuration
+│   ├── stacking_baseline_models.yaml# Baseline stacking model definitions
+│   ├── stacking_top5_models.yaml    # Top-5 stacking configuration
+│   └── stacking_xgb_only.yaml       # XGBoost-only stacking setup
 │
-├── data/
-│   ├── raw/
-│   │   └── original competition datasets
-│   ├── processed/
-│   │   ├── processed_train_x.csv
-│   │   ├── processed_train_y.csv
-│   │   └── processed_test_x.csv
+├── docs/                            # Project documentation / reports
+├── notebooks/                       # EDA and exploratory notebooks
+├── outputs/                         # Saved models, metrics, predictions, submissions
 │
 ├── src/
-│   ├── preprocessing/
-│   │   ├── data_cleaning.py
-│   │   ├── feature_engineering.py
-│   │   └── feature_validation.py
+│   ├── experiments/                 # Experimental & exploratory pipelines
+│   │   ├── individual_models/       # Single-model baselines
+│   │   ├── nn/                      # Neural network experiments
+│   │   ├── smote/                   # Imbalance handling (SMOTE) experiments
+│   │   ├── stacking/                # Stacking experiments and prototypes
+│   │   └── sweep_xgboost.py         # XGBoost hyperparameter sweeps (W&B)
 │   │
-│   ├── experiments/
-│   │   ├── train_xgboost.py
-│   │   ├── cross_validation.py
-│   │   └── evaluate_models.py
+│   ├── feature_engineering/
+│   │   └── feature_selection_lasso_rfe.py
+│   │                                  # Feature selection via LASSO and RFE
+│
+│   ├── model_training/              # Main training and inference pipeline
+│   │   ├── model_defs.py             # Centralized model definitions
+│   │   ├── run_kfold_training.py     # K-fold CV training entrypoint
+│   │   ├── retrain_final_xgboost.py  # Retrain best model on full training data
+│   │   ├── evaluate_test_set.py      # Evaluation on held-out data (if applicable)
+│   │   ├── generate_submission.py    # Generate competition submission
+│   │   └── stacking_submission.py   # Submission pipeline for stacking models
 │   │
-│   ├── inference/
-│   │   └── generate_predictions.py
-│   │
-│   └── utils/
-│       ├── logging_utils.py
-│       ├── metrics.py
-│       └── io_utils.py
+│   └── utils/                       # Shared utilities (logging, IO, metrics)
 │
-├── outputs/
-│   ├── models/
-│   │   └── trained model artifacts
-│   ├── logs/
-│   │   └── training and evaluation logs
-│   └── submissions/
-│       └── final competition submission files
-│
-├── notebooks/
-│   └── exploratory analysis and sanity checks
-│
-├── requirements.txt
-├── README.md
-└── run_pipeline.py
+├── wandb/                           # Weights & Biases run artifacts (local)
+├── LICENSE
+└── README.md
 
 ````
 
 ---
 
-## 🛠️ Technologies & Tools Used
+## ⚙️ Configuration Files (`config/`)
 
-**Core Stack**
+All experiments and pipelines are driven by YAML configs:
+
+- **`model_config.yaml`**  
+  Core training configuration (model parameters, CV setup, paths, seeds).
+
+- **`sweep_config.yaml`**  
+  Weights & Biases sweep configuration for XGBoost hyperparameter tuning.
+
+- **`stacking_baseline_models.yaml`**  
+  Defines baseline models used in stacking experiments.
+
+- **`stacking_top5_models.yaml`**  
+  Stacking configuration using the top-performing individual models.
+
+- **`stacking_xgb_only.yaml`**  
+  Stacking setup restricted to XGBoost variants only.
+
+---
+
+## 🛠️ Tech Stack
+
+**Core Libraries**
 - Python
 - Pandas, NumPy
 - scikit-learn
 - XGBoost
 
-**Experiment Tracking & Monitoring**
-- Weights & Biases (W&B) for:
-  - Experiment tracking
-  - Metric comparison
-  - Hyperparameter logging
-  - Model versioning
+**Experiment Tracking**
+- **Weights & Biases (wandb)**  
+  - Hyperparameter sweeps  
+  - Metric tracking  
+  - Run comparison and reproducibility  
 
 **Other Tools**
 - Matplotlib / Seaborn (EDA & diagnostics)
 - YAML-based configuration management
-- Modular logging with Python `logging`
+- Modular logging and utilities
 
 ---
 
-## ▶️ How to Run the Project
+## ▶️ Typical Workflow
 
-1. **Install dependencies**
+### 1️⃣ Cross-Validation Training
+Runs K-fold CV and logs metrics.
+
 ```bash
-pip install -r requirements.txt
+python src/model_training/run_kfold_training.py
 ````
 
-2. **Run the full pipeline**
+### 2️⃣ Retrain Final Model
+
+Retrains the best-performing configuration on full training data.
 
 ```bash
-python run_pipeline.py
+python src/model_training/retrain_final_xgboost.py
 ```
 
-3. **Generate test predictions**
+### 3️⃣ Generate Submission
+
+Creates the final submission file.
 
 ```bash
-python src/inference/generate_predictions.py
+python src/model_training/generate_submission.py
+```
+
+### (Optional) Stacking Submission
+
+```bash
+python src/model_training/stacking_submission.py
 ```
 
 ---
 
-## 📊 Evaluation Metric
+## 🧪 Notes on Experiments
 
-* **Primary Metric:** ROC-AUC
-* **Validation Strategy:** K-Fold Cross Validation
-* **Final Result:**
-
-  * **Hidden Test AUC:** `0.916`
-  * **Leaderboard Position:** `2nd Place`
+The `src/experiments/` directory contains exploratory work and alternative modeling strategies.
+The **primary, production-style pipeline** lives in `src/model_training/`.
 
 ---
 
-## 🧩 Key Design Principles
+## 📌 License
 
-* Modular and reusable code structure
-* Strict separation of data processing, modeling, and inference
-* Configuration-driven experimentation
-* Emphasis on reproducibility and traceability
-
----
-
-## 🚀 Future Improvements
-
-* Model stacking / ensembling
-* Feature group ablations
-* SHAP-based interpretability
-* Calibration analysis (Brier score, reliability plots)
-
----
-
-## 📬 Contact
-
-If you have questions about the project structure or want to extend this work, feel free to reach out or open an issue.
-
----
-
-**Built with care, iteration, and far too many AUC plots.**
+See `LICENSE`.
 
 
----
